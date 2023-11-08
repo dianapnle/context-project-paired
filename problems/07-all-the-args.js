@@ -1,5 +1,8 @@
 function allTheArgs(func, ...args) {
-  // Your code here 
+  return function (...newArgs) {
+    return func(...args, ...newArgs)
+  }
+
 }
 
 /*****************************************************************************/
